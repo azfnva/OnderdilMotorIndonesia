@@ -39,6 +39,7 @@ dependencies:
   # Dipakai eksplisit untuk mock local storage Supabase di unit test
   # (test/cart_model_test.dart) — selama ini hanya terpasang transitif.
   shared_preferences: ^2.5.5
+  material_ui: ^1.9.0
   # State management: BLoC pattern (Event → Stream → State → UI)
   # Implementasi menggunakan StreamController (built-in Dart), tanpa dependency eksternal.
   # Pola: Event → BLoC → State → UI (unidirectional data flow)
@@ -53,6 +54,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+  bdd_widget_test: ^3.0.4
+  build_runner: ^2.16.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

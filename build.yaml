@@ -1,0 +1,8 @@
+targets:
+  $default:
+    builders:
+      bdd_widget_test|featureBuilder:
+        options:
+          # Semua step (yang tidak punya implementasi custom di test/bdd/step)
+          # digenerate ke folder step bersama.
+          stepFolderName: ../step
