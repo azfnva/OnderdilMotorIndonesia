@@ -34,8 +34,7 @@ jobs:
       - name: Convert LCOV to Cobertura XML
         run: |
           pip install lcov-cobertura
-          export PATH="$HOME/.local/bin:$PATH"
-          lcov-cobertura coverage/lcov.info -o coverage/cobertura-coverage.xml
+          python -m lcov_cobertura coverage/lcov.info -o coverage/cobertura-coverage.xml
 
       - name: SonarQube Scan
         uses: sonarsource/sonarcloud-github-action@master
